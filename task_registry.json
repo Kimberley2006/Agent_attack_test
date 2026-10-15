@@ -1,0 +1,1879 @@
+{
+ "created_utc": "2026-10-11T04:31:52Z",
+ "service_info": {
+  "bm25_doc_n": 1181430,
+  "n_goals": 12087,
+  "num_products": null,
+  "ok": true,
+  "product_library": "/cache/wuhan/webshop_data/items_shuffle.json",
+  "search_backend": "BM25LuceneCompat",
+  "server_started_at": "2026-10-11T03:42:52Z"
+ },
+ "n_total_goals": 12087,
+ "split_seed": 20261011,
+ "asin_disjoint": true,
+ "data_fingerprint": {
+  "items_shuffle_sha256": "2ef591d65df3af89e972ab72468eb82cbf124d876552d9f3678667edd620a6c8",
+  "items_ins_v2_sha256": "1d36af476bdb8f82a5da62bd8acdabe54cd8de2fa84010d37da5c4890feb447e",
+  "items_human_ins_sha256": "cf78667548a71786e1d9049c24b802e48e1084ad4bb021cae56ce1f6d96954a3"
+ },
+ "splits": {
+  "debug": [
+   {
+    "asin": "B013UKOWAA",
+    "attributes": [
+     "alcohol free",
+     "long lasting"
+    ],
+    "goal_idx": 7692,
+    "goal_options": [],
+    "instruction_text": "what deodorants do you have that are alcohol free and very long lasting?, and price lower than 40.00 dollars",
+    "name": "Donald Trump Empire for Men Alcohol-Free Deodorant Stick, 2.5 Ounce (M-BB-2804)",
+    "price_upper": 40.0,
+    "query": "deodorants & antiperspirants"
+   },
+   {
+    "asin": "B013UKOWAA",
+    "attributes": [
+     "alcohol free",
+     "long lasting"
+    ],
+    "goal_idx": 10167,
+    "goal_options": [],
+    "instruction_text": "what deodorants do you have that are alcohol free and very long lasting?, and price lower than 30.00 dollars",
+    "name": "Donald Trump Empire for Men Alcohol-Free Deodorant Stick, 2.5 Ounce (M-BB-2804)",
+    "price_upper": 30.0,
+    "query": "deodorants & antiperspirants"
+   },
+   {
+    "asin": "B09LQ8V928",
+    "attributes": [
+     "winter warm"
+    ],
+    "goal_idx": 2668,
+    "goal_options": [
+     "wine",
+     "x-large"
+    ],
+    "instruction_text": "i need wine colored winter warm boxers. pick something in wine color, and price lower than 30.00 dollars",
+    "name": "Fuodo Women's Sleep Shorts Lightweight Soft Cotton Pajama Bottoms Casual Loungewear Boxers Plus Size Active Comfy Homewear",
+    "price_upper": 30.0,
+    "query": "women's shorts"
+   },
+   {
+    "asin": "B07TXLDCNK",
+    "attributes": [
+     "fragrance free",
+     "cruelty free",
+     "sensitive skin"
+    ],
+    "goal_idx": 1066,
+    "goal_options": [
+     "longwear"
+    ],
+    "instruction_text": "i'm looking for longwear makeup remover towelettes for sensitive skin. make sure they're cruelty free, and price lower than 30.00 dollars",
+    "name": "Almay Makeup Remover Cleansing Towelettes, Biodegradable Longwear Makeup Wipes for Sensitive Skin, Hypoallergenic, Cruelty Free, Fragrance Free, 25 Count",
+    "price_upper": 30.0,
+    "query": "makeup remover"
+   },
+   {
+    "asin": "B09Q63T5ZF",
+    "attributes": [
+     "elastic waist"
+    ],
+    "goal_idx": 4766,
+    "goal_options": [
+     "grey",
+     "large"
+    ],
+    "instruction_text": "i am looking for a large, grey, men's pullover sweater with an elastic waist, and price lower than 50.00 dollars",
+    "name": "Pure Color V-Neck Men's Sweater Knitted Pullover Jumper Long-Sleeved Tops",
+    "price_upper": 50.0,
+    "query": "men's sweaters"
+   },
+   {
+    "asin": "B005OKZ38K",
+    "attributes": [
+     "hair dye"
+    ],
+    "goal_idx": 5470,
+    "goal_options": [
+     "33 dark soft brown",
+     "6.56 ounce (pack of 1)"
+    ],
+    "instruction_text": "i would like a 6.56 ounce dark soft brown box of hair dye, and price lower than 130.00 dollars",
+    "name": "Revlon Colorsilk Beautiful Color, Permanent Hair Dye with Keratin, 100% Gray Coverage, Ammonia Free, 11 Soft Black",
+    "price_upper": 130.0,
+    "query": "hair coloring products"
+   },
+   {
+    "asin": "B08G8NCR8D",
+    "attributes": [
+     "easy clean"
+    ],
+    "goal_idx": 2182,
+    "goal_options": [],
+    "instruction_text": "i am looking for an easy to clean hair dyeing set with a mixing bowl, and price lower than 140.00 dollars",
+    "name": "8pcs Hair Coloring Dyeing Set, Professional Hair Dyeing Tool Highlights Comb Hair Clip Dyestuff Mixing Bowl Kit",
+    "price_upper": 140.0,
+    "query": "hair coloring products"
+   },
+   {
+    "asin": "B08G8NCR8D",
+    "attributes": [
+     "easy clean"
+    ],
+    "goal_idx": 9220,
+    "goal_options": [],
+    "instruction_text": "i am looking for an easy to clean hair dyeing set with a mixing bowl, and price lower than 130.00 dollars",
+    "name": "8pcs Hair Coloring Dyeing Set, Professional Hair Dyeing Tool Highlights Comb Hair Clip Dyestuff Mixing Bowl Kit",
+    "price_upper": 130.0,
+    "query": "hair coloring products"
+   },
+   {
+    "asin": "B094QYPSD6",
+    "attributes": [
+     "super soft",
+     "living room"
+    ],
+    "goal_idx": 2474,
+    "goal_options": [
+     "fruit avocado cartoon"
+    ],
+    "instruction_text": "i need a super soft fleece throw blanket for my living room couch. i really like the fruit avocado cartoon color, and price lower than 50.00 dollars",
+    "name": "RICKYOUNG Vintage Edible Mushroom Fleece Flannel Lightweight Plush Microfiber Bedding Throw Blanket for Couch and Bed 50\"x40\" for Kids",
+    "price_upper": 50.0,
+    "query": "throw blankets"
+   },
+   {
+    "asin": "B09NCB2NC4",
+    "attributes": [
+     "heavy duty"
+    ],
+    "goal_idx": 3019,
+    "goal_options": [],
+    "instruction_text": "i want a heavy duty splice board design computer office desk, and price lower than 140.00 dollars",
+    "name": "A Contrasting Color Splice Board Design Computer Office Desk, Home Office Writing Desk, Black Metal Frame",
+    "price_upper": 140.0,
+    "query": "home office desks"
+   }
+  ],
+  "dev": [
+   {
+    "asin": "B09FQ8TN1L",
+    "attributes": [
+     "birthday party"
+    ],
+    "goal_idx": 1315,
+    "goal_options": [
+     "gold 30"
+    ],
+    "instruction_text": "i am looking for birthday party cupcake toppers, decorations supplies of pattern name : gold 30, and price lower than 30.00 dollars",
+    "name": "Gyufise 24Pcs Happy 30th Birthday Cupcake Toppers Gold Glitter Number 30 Thirty Cupcake Picks 30th Birthday Celebrating Anniversary Party Cake Decorations Supplies",
+    "price_upper": 30.0,
+    "query": "toothpicks"
+   },
+   {
+    "asin": "B09SGBKXB9",
+    "attributes": [
+     "hand wash"
+    ],
+    "goal_idx": 2450,
+    "goal_options": [
+     "small"
+    ],
+    "instruction_text": "get me a hand-washable swimsuit in size small, and price lower than 40.00 dollars",
+    "name": "Womens Tankini Swimsuits Ruffled Flounce Swimwear Top 2 Piece Bahting Suit Tummy Control High Waist Beach Bikini Sets",
+    "price_upper": 40.0,
+    "query": "women's swimsuits & cover ups"
+   },
+   {
+    "asin": "B09NYH4HJY",
+    "attributes": [
+     "high waist"
+    ],
+    "goal_idx": 9029,
+    "goal_options": [],
+    "instruction_text": "i am looking for a blue high waist legging for women, and price lower than 40.00 dollars",
+    "name": "siilsaa Leggings for Women, Women's Leggings High Waisted Tummy Control Butt Lifting Fitness Tights Bubble Yoga Shorts",
+    "price_upper": 40.0,
+    "query": "women's activewear"
+   },
+   {
+    "asin": "B09MTPKW8N",
+    "attributes": [
+     "bad breath"
+    ],
+    "goal_idx": 2356,
+    "goal_options": [
+     "blue"
+    ],
+    "instruction_text": "i need a blue tongue scraper for bad breath, and price lower than 50.00 dollars",
+    "name": "SWAGOFKGys Travel Toothbrushes， Useful Tongue Scraper Care Brush Keep Fresh Breath Maker Cleaning Tongue Manual Toothbrush Oral Clean Hygiene Care (Color : Green)",
+    "price_upper": 50.0,
+    "query": "tongue cleaners"
+   },
+   {
+    "asin": "B09MTPKW8N",
+    "attributes": [
+     "bad breath"
+    ],
+    "goal_idx": 10845,
+    "goal_options": [
+     "blue"
+    ],
+    "instruction_text": "i need a blue tongue scraper for bad breath, and price lower than 30.00 dollars",
+    "name": "SWAGOFKGys Travel Toothbrushes， Useful Tongue Scraper Care Brush Keep Fresh Breath Maker Cleaning Tongue Manual Toothbrush Oral Clean Hygiene Care (Color : Green)",
+    "price_upper": 30.0,
+    "query": "tongue cleaners"
+   },
+   {
+    "asin": "B09FGJSGXR",
+    "attributes": [
+     "high performance",
+     "wireless bluetooth"
+    ],
+    "goal_idx": 2947,
+    "goal_options": [
+     "camouflage green"
+    ],
+    "instruction_text": "i am looking for a high performance wireless bluetooth camouflage green game controller, and price lower than 40.00 dollars",
+    "name": "Wireless Game Controller for PS-4/Playstation-4,Dual-Motor Vibration Joystick 800mAh Touch Panel,Aim Remote Control Cool Controllers Compatible with Pro/Slim/Playstation-4 Console/Steam-Camo",
+    "price_upper": 40.0,
+    "query": "playstation"
+   },
+   {
+    "asin": "B09C5SR9KH",
+    "attributes": [
+     "rubber sole"
+    ],
+    "goal_idx": 5512,
+    "goal_options": [
+     "36 eu"
+    ],
+    "instruction_text": "i am looking for a pair of women's size 36 eu water shoes with rubber soles, and price lower than 70.00 dollars",
+    "name": "HAOKTSB Swimming Diving Shoes Fitness Treadmill Shoes Beach Wading Snorkeling Shoes Couple Travel Beach Shoes Water Shoes for Women Water Shoes for Men Outdoor Beach Shoes",
+    "price_upper": 70.0,
+    "query": "men's outdoor shoes"
+   },
+   {
+    "asin": "B07VNPHTB2",
+    "attributes": [
+     "batteries included"
+    ],
+    "goal_idx": 5208,
+    "goal_options": [],
+    "instruction_text": "i would like a remote control that has batteries included, and price lower than 30.00 dollars",
+    "name": "AKB72914238 Remote Control Replacement for LG TV Remote AKB72914201 AKB72914207 AKB72914209",
+    "price_upper": 30.0,
+    "query": "remotes"
+   },
+   {
+    "asin": "B09N1HSDV2",
+    "attributes": [
+     "loose fit",
+     "long sleeve"
+    ],
+    "goal_idx": 11319,
+    "goal_options": [
+     "gold",
+     "large"
+    ],
+    "instruction_text": "i'm looking for a large t-shirt style dress with long sleeves. i'd like one that is loose fitting and gold in color, and price lower than 30.00 dollars",
+    "name": "POIUDE Women Casual Plus Size Strapless Long Sleeve Sexy Love Letter Print Off Shoulder Slouchy T-Shirt Dress Tops",
+    "price_upper": 30.0,
+    "query": "men's dress shirts"
+   },
+   {
+    "asin": "B08B1MCFKL",
+    "attributes": [
+     "ethylene vinyl"
+    ],
+    "goal_idx": 139,
+    "goal_options": [
+     "dark denim | red orange",
+     "10"
+    ],
+    "instruction_text": "i am looking for dark denim color ethylene vinyl ultra train of size 10, 3rd generation for  men, and price lower than 200.00 dollars",
+    "name": "Salewa Ultra Train 3 - Men's",
+    "price_upper": 200.0,
+    "query": "men's athletic shoes"
+   },
+   {
+    "asin": "B087ZKY4XQ",
+    "attributes": [
+     "gift set"
+    ],
+    "goal_idx": 9565,
+    "goal_options": [
+     "nescafe instant coffee 4 mix set"
+    ],
+    "instruction_text": "i want to find a gift set that includes a variety of four instant coffees from nescafe to sample in it, and price lower than 40.00 dollars",
+    "name": "Korean 3 in 1 Instant Coffee Variety Sample Packets with Gift Box Set, Camping Essentials, Maxim Instant Coffee Mix Combination 20 Sticks",
+    "price_upper": 40.0,
+    "query": "milks & creams"
+   },
+   {
+    "asin": "B07PQT2JFJ",
+    "attributes": [
+     "coconut oil"
+    ],
+    "goal_idx": 4282,
+    "goal_options": [
+     "3 pack"
+    ],
+    "instruction_text": "i am looking for a 3 pack of coconut oil hair therapy, and price lower than 40.00 dollars",
+    "name": "Isoplus Black Castor Oil & Coconut Oil Hair & Scalp Therapy Oil 4 oz",
+    "price_upper": 40.0,
+    "query": "hair treatment oils"
+   },
+   {
+    "asin": "B07B6FFJMG",
+    "attributes": [
+     "chocolate covered",
+     "gluten free"
+    ],
+    "goal_idx": 6136,
+    "goal_options": [
+     "cashew almond"
+    ],
+    "instruction_text": "i want to buy some cashew almond flavored chocolate covered gluten-free bars, and price lower than 50.00 dollars",
+    "name": "Caveman Foods Paleo-Friendly Nutrition Bar Dark Chocolate, Cherry Nut, 12 Count, 16.9 Ounce",
+    "price_upper": 50.0,
+    "query": "granola & nutrition bars"
+   },
+   {
+    "asin": "B09M8286VM",
+    "attributes": [
+     "high definition"
+    ],
+    "goal_idx": 4979,
+    "goal_options": [],
+    "instruction_text": "i trying to find a apple 7 watch screen protector  with high defintion, and price lower than 40.00 dollars",
+    "name": "[6Pack] Screen Protector Compatible with Apple Watch Series 7 41mm-[Max Coverage] [New Version]Anti-Scratch Bubble-free HD Transparent Self-Healing Flexible TPU Film for iWatch 41mm Not Tempered Glass",
+    "price_upper": 40.0,
+    "query": "video glasses"
+   },
+   {
+    "asin": "B09JG66DXC",
+    "attributes": [
+     "super soft"
+    ],
+    "goal_idx": 8326,
+    "goal_options": [
+     "happy fall gnome orange plaid"
+    ],
+    "instruction_text": "i'm searching for super soft happy fall gnome orange plaid blanket, and price lower than 40.00 dollars",
+    "name": "Gnome Bee Fall Blanket Lightweight Plush Comfy Super Soft Flannel Fleece Throw Blankets Home Decor for Bed Couch Sofa Living Room 40\"x30\" XS for Pet Toddler",
+    "price_upper": 40.0,
+    "query": "throw blankets"
+   },
+   {
+    "asin": "B08YR79P5T",
+    "attributes": [
+     "short sleeve"
+    ],
+    "goal_idx": 5670,
+    "goal_options": [
+     "x-large"
+    ],
+    "instruction_text": "i am looking for a women's short sleeve honey bee t shirt size x-large, and price lower than 50.00 dollars",
+    "name": "Your Own Kind of Beautiful - Women Honey Bee T Shirts Sunflowers Graphic Tee Short Sleeve Blouse Tops World Bee Day Gift",
+    "price_upper": 50.0,
+    "query": "women's tops, tees & blouses"
+   },
+   {
+    "asin": "B09DCNHNFH",
+    "attributes": [
+     "super soft",
+     "machine washable"
+    ],
+    "goal_idx": 5639,
+    "goal_options": [
+     "color8"
+    ],
+    "instruction_text": "looking for a soft fleece blanket 50\"x60\" that is super soft and machine washable.  color 8, and price lower than 50.00 dollars",
+    "name": "Soft Fleece Blanket, Mushroom Warm Cozy Plush Blanket, Fluffy Faux Fur Throw Blanket, Large Furry Blanket for Bed Chair Sofa Couch Bedroom 50\" x 60\"",
+    "price_upper": 50.0,
+    "query": "throw blankets"
+   },
+   {
+    "asin": "B093BMWTPG",
+    "attributes": [
+     "quality polyester"
+    ],
+    "goal_idx": 10813,
+    "goal_options": [
+     "x-large"
+    ],
+    "instruction_text": "i am looking for a  x-large hoodies & sweatshirts quality of polyester, and price lower than 60.00 dollars",
+    "name": "SIAOMA Anime Casual Zipper Hoodie Unisex Manga Zip Up Jacket Fashion Coat",
+    "price_upper": 60.0,
+    "query": "men's fashion hoodies & sweatshirts"
+   },
+   {
+    "asin": "B07TXLYSRV",
+    "attributes": [
+     "easy apply",
+     "long lasting",
+     "coconut oil",
+     "dry skin",
+     "sensitive skin"
+    ],
+    "goal_idx": 6377,
+    "goal_options": [
+     "white henna"
+    ],
+    "instruction_text": "i'm looking for temporary tattoos for women's and it was sensitive skin and it also with dry skin, and price lower than 40.00 dollars",
+    "name": "Metallic Tattoo Stickers, Gold Silver Lace Chains Mandala Metallic Temporary Tattoo Body Art for Women Party Rave Makeup, 12-Sheet",
+    "price_upper": 40.0,
+    "query": "body makeup"
+   },
+   {
+    "asin": "B08S9V2LSL",
+    "attributes": [
+     "machine washable"
+    ],
+    "goal_idx": 5231,
+    "goal_options": [
+     "fossil",
+     "6"
+    ],
+    "instruction_text": "i would like a pair of size six fossil boots that are machine washable, and price lower than 120.00 dollars",
+    "name": "Hey Dude Women's Denny Shoes Multiple Colors",
+    "price_upper": 120.0,
+    "query": "women's boots"
+   }
+  ],
+  "baseline": [
+   {
+    "asin": "B085LS1KZ7",
+    "attributes": [
+     "synthetic hair"
+    ],
+    "goal_idx": 1141,
+    "goal_options": [
+     "r22 swedish blonde"
+    ],
+    "instruction_text": "i am looking for a hairpiece made up of synthetic hair. also choose swedish blonde hair color one, and price lower than 80.00 dollars",
+    "name": "12\" Simply Straight Pony Color R10 CHESTNUT - Hairdo Wigs Tru2Life Heat Friendly Synthetic Ponytail Makeover Curl Flat Iron Hairpiece Braid Updo Bundle MaxWigs Hairloss Booklet",
+    "price_upper": 80.0,
+    "query": "hair loss products"
+   },
+   {
+    "asin": "B07GJN7V8R",
+    "attributes": [
+     "rubber sole"
+    ],
+    "goal_idx": 4601,
+    "goal_options": [
+     "artisan gold"
+    ],
+    "instruction_text": "i am looking for a artisan gold color flipflop having rubber sole, and price lower than 160.00 dollars",
+    "name": "FitFlop Women's Lottie Glitzy Sandal",
+    "price_upper": 160.0,
+    "query": "women's flats"
+   },
+   {
+    "asin": "B07GJN7V8R",
+    "attributes": [
+     "rubber sole"
+    ],
+    "goal_idx": 6673,
+    "goal_options": [
+     "artisan gold"
+    ],
+    "instruction_text": "i am looking for a artisan gold color flipflop having rubber sole, and price lower than 160.00 dollars",
+    "name": "FitFlop Women's Lottie Glitzy Sandal",
+    "price_upper": 160.0,
+    "query": "women's flats"
+   },
+   {
+    "asin": "B09GFRJSKS",
+    "attributes": [
+     "day comfort"
+    ],
+    "goal_idx": 9897,
+    "goal_options": [
+     "large"
+    ],
+    "instruction_text": "i'm looking for a large sized sports bra that is comfortable to wear during the day, and price lower than 40.00 dollars",
+    "name": "Scatter Kindness Dandelion Women's Yoga Sports Bra, Sports Vests,Activewear Bra,Fitness Tank Top",
+    "price_upper": 40.0,
+    "query": "women's activewear"
+   },
+   {
+    "asin": "B09GFRJSKS",
+    "attributes": [
+     "day comfort"
+    ],
+    "goal_idx": 11704,
+    "goal_options": [
+     "large"
+    ],
+    "instruction_text": "i'm looking for a large sized sports bra that is comfortable to wear during the day, and price lower than 40.00 dollars",
+    "name": "Scatter Kindness Dandelion Women's Yoga Sports Bra, Sports Vests,Activewear Bra,Fitness Tank Top",
+    "price_upper": 40.0,
+    "query": "women's activewear"
+   },
+   {
+    "asin": "B09CYTXQPQ",
+    "attributes": [
+     "long sleeve"
+    ],
+    "goal_idx": 1942,
+    "goal_options": [],
+    "instruction_text": "large size white  colored 1/4 zip golf shirt long sleeve athletic pullover with brushed fleece lining, and price lower than 50.00 dollars",
+    "name": "Haimont Men's 1/4 Zip Golf Shirt Long Sleeve Athletic Pullover with Lightweight Brushed Fleece Lining",
+    "price_upper": 50.0,
+    "query": "men's sweaters"
+   },
+   {
+    "asin": "B00RHH51P8",
+    "attributes": [
+     "twin size"
+    ],
+    "goal_idx": 7335,
+    "goal_options": [
+     "bronze",
+     "twin",
+     "canopy bed"
+    ],
+    "instruction_text": "show me twin sized  bronze colored day bed made in canopy bed style, and price lower than 280.00 dollars",
+    "name": "DHP Manila Metal Framed Daybed with Trundle, Twin - White",
+    "price_upper": 280.0,
+    "query": "home office furniture sets"
+   },
+   {
+    "asin": "B00RHH51P8",
+    "attributes": [
+     "white item"
+    ],
+    "goal_idx": 11894,
+    "goal_options": [
+     "gold",
+     "king",
+     "bed"
+    ],
+    "instruction_text": "i want to find a white and gold king-sized daybed, and price lower than 280.00 dollars",
+    "name": "DHP Manila Metal Framed Daybed with Trundle, Twin - White",
+    "price_upper": 280.0,
+    "query": "home office furniture sets"
+   },
+   {
+    "asin": "B01I0TE6GQ",
+    "attributes": [
+     "white finish"
+    ],
+    "goal_idx": 9570,
+    "goal_options": [],
+    "instruction_text": "i am looking for an end table that has a white finish, and price lower than 170.00 dollars",
+    "name": "Linon Peggy Wood End Table in White",
+    "price_upper": 170.0,
+    "query": "end tables"
+   },
+   {
+    "asin": "B07G3PXTKT",
+    "attributes": [
+     "dairy free",
+     "low sugar"
+    ],
+    "goal_idx": 9786,
+    "goal_options": [
+     "vanilla"
+    ],
+    "instruction_text": "i am looking for a low sugar ans dairy free vanilla flavored creamer, with added collagen, and price lower than 40.00 dollars",
+    "name": "Vital Proteins Collagen Coffee Creamer, No Dairy & Low Sugar Powder with Collagen Peptides Supplement - Supporting Healthy Hair, Skin, Nails with Energy-Boosting MCTs - Coconut 10.3oz",
+    "price_upper": 40.0,
+    "query": "dairy, cheese & eggs"
+   },
+   {
+    "asin": "B09BB45XYV",
+    "attributes": [
+     "long lasting",
+     "bird watching"
+    ],
+    "goal_idx": 605,
+    "goal_options": [],
+    "instruction_text": "i would like a long lasting minocular for bird watching, and price lower than 140.00 dollars",
+    "name": "WSXY 10X42 Monocular High Power Binoculars, Compact Scope, Portable, Waterproof and Anti-Fog, Suitable for Bird Watching, Hunting, Camping, Hiking, Travel, Wildlife Scenery",
+    "price_upper": 140.0,
+    "query": "binoculars & scopes"
+   },
+   {
+    "asin": "B087WQFSLH",
+    "attributes": [
+     "easy carry"
+    ],
+    "goal_idx": 7510,
+    "goal_options": [
+     "khaki",
+     "11-12 inch"
+    ],
+    "instruction_text": "i want to buy a carry case for laptop which is easy to carry and is of khaki color, and it's size should be 11-12 inch, and price lower than 40.00 dollars",
+    "name": "V Voova 13 13.3 Inch Laptop Sleeve Carrying Case Compatible with 2018-2021 MacBook Air,MacBook Pro 14/M1,13.5\" Surface Book 3/Laptop 4,HP Envy 13,Chromebook,Slim Computer Bag Cover with Handle,Purple",
+    "price_upper": 40.0,
+    "query": "mac"
+   },
+   {
+    "asin": "B085QMTTSC",
+    "attributes": [
+     "kosher certified"
+    ],
+    "goal_idx": 85,
+    "goal_options": [
+     "caramel",
+     "4.41 ounce"
+    ],
+    "instruction_text": "i need a chocolate coated wafers with a 4.41 ounce size. and i choose the caramel flavor, and price lower than 80.00 dollars",
+    "name": "Loacker Tortina Premium Chocolate Coated Wafer, Triple Dark, 125g/4.41 oz., pack of 12",
+    "price_upper": 80.0,
+    "query": "milks & creams"
+   },
+   {
+    "asin": "B09K74T4LZ",
+    "attributes": [
+     "slip resistant"
+    ],
+    "goal_idx": 7646,
+    "goal_options": [
+     "9 wide"
+    ],
+    "instruction_text": "i'm in love with women's mid-calf boots, i want to find one of non-slip vintage embroidered thick heels, size: 9 wide, help me in this mission, and price lower than 60.00 dollars",
+    "name": "Womens Mid Calf Boots Chunky Heel Embroidered Vintage Cowboy Western Knee High Boots Boots for Women Knee High Multicoloured",
+    "price_upper": 60.0,
+    "query": "women's flats"
+   },
+   {
+    "asin": "B09QPN339F",
+    "attributes": [
+     "open toe",
+     "ankle strap"
+    ],
+    "goal_idx": 108,
+    "goal_options": [
+     "10"
+    ],
+    "instruction_text": "i am looking for open toe sandals with an ankle strap. i want it in size 10, and price lower than 60.00 dollars",
+    "name": "Women's Platform Sandals Wedge Ankle Strap Open Toe Sandals Wedge Sandals Platform High Heels Glitter Wedge Sandal",
+    "price_upper": 60.0,
+    "query": "women's pumps"
+   },
+   {
+    "asin": "B08HMZXK4R",
+    "attributes": [
+     "dry hair"
+    ],
+    "goal_idx": 4312,
+    "goal_options": [],
+    "instruction_text": "i would like a hair comb for dry hair, and price lower than 40.00 dollars",
+    "name": "3 Pieces Wide Tooth Detangling Comb Shower Flexible Comb Wide Spacing Teeth Comb Anti-Static Detangling Shampoo Comb for Long, Thick, Curly, Wet, Dry and Most Hair Types",
+    "price_upper": 40.0,
+    "query": "hair coloring products"
+   },
+   {
+    "asin": "B09PQG6HHY",
+    "attributes": [
+     "bird watching"
+    ],
+    "goal_idx": 3349,
+    "goal_options": [],
+    "instruction_text": "i would like some monoculars for birdwatching, and price lower than 100.00 dollars",
+    "name": "VDSOIUTYHFV Monocular Lens, 18x Telephoto Phone Lens, High-Definition Adjustable Focus Zoom Video Camera, Hand-held Binoculars, for Adults Bird Watching, Traveling, Sightseeing",
+    "price_upper": 100.0,
+    "query": "binoculars & scopes"
+   },
+   {
+    "asin": "B09CDN7QBP",
+    "attributes": [
+     "height adjustable",
+     "easy install",
+     "lumbar support",
+     "living room"
+    ],
+    "goal_idx": 3622,
+    "goal_options": [
+     "pink"
+    ],
+    "instruction_text": "i'm looking for an easy to install pink chair for the living room that offers lumbar support and is height adjustable, and price lower than 420.00 dollars",
+    "name": "Height Adjustable Armchair Accent Chair for Executive Bedroom,Velvet Desk Chair Mid-back Ergonomic Computer Chair Soft Comfortable Swivel Chair with Lumbar Pillow,Home Office Chair-Purple 60x60x80-90c",
+    "price_upper": 420.0,
+    "query": "home office chairs"
+   },
+   {
+    "asin": "B09NPW7ZDF",
+    "attributes": [
+     "valentine day"
+    ],
+    "goal_idx": 306,
+    "goal_options": [],
+    "instruction_text": "i am looking for some valentine's day cupcake toppers, and price lower than 30.00 dollars",
+    "name": "Donoter 24 Pieces Happy Valentine's Day Cupcake Toppers Cupid Heart Rose flower Cupcake Picks for Valentine's Day Party Table Decorations",
+    "price_upper": 30.0,
+    "query": "toothpicks"
+   },
+   {
+    "asin": "B01B1ZVPR4",
+    "attributes": [
+     "wall mounted"
+    ],
+    "goal_idx": 1118,
+    "goal_options": [
+     "vintage leather light grey",
+     "30'' wide"
+    ],
+    "instruction_text": "i would like a 30\" wide vintage leather grey headboard that is wall mounted, and price lower than 220.00 dollars",
+    "name": "Vänt Upholstered Wall Panels - Queen/Full Size Wall Mounted Headboards - Metallic Neutral - Pack of 4 Panels (Each Individual Panel 30\"x11.5\")",
+    "price_upper": 220.0,
+    "query": "furniture sets"
+   },
+   {
+    "asin": "B07ZR8KF4C",
+    "attributes": [
+     "easy use"
+    ],
+    "goal_idx": 4383,
+    "goal_options": [
+     "8-12 oz bricks of tofu"
+    ],
+    "instruction_text": "i need an easy to use tofu drainer for tofu bricks, and price lower than 40.00 dollars",
+    "name": "Tofu Press, Easily Remove Water from Tofu, Tofu Squeezer Dishwasher Safe, Tofu Drainer and Strainer, Paneer Maker with Cheesecloth",
+    "price_upper": 40.0,
+    "query": "cheeses"
+   },
+   {
+    "asin": "B08X6K9XN3",
+    "attributes": [
+     "moisture wicking",
+     "rubber outsole"
+    ],
+    "goal_idx": 3084,
+    "goal_options": [
+     "black",
+     "14 women | 13 men"
+    ],
+    "instruction_text": "i'm looking for a non slip trekking shoes with rubber outsole and should be moisture wicking. also choose black colored with size 14 for women, and price lower than 60.00 dollars",
+    "name": "Ulogu Waterproof Hiking Boots Men Women Lightweight Comfortable NonSlip Trekking Shoes",
+    "price_upper": 60.0,
+    "query": "men's outdoor shoes"
+   },
+   {
+    "asin": "B09KXTC3FC",
+    "attributes": [
+     "hands free"
+    ],
+    "goal_idx": 10504,
+    "goal_options": [],
+    "instruction_text": "i'm looking for wireless bluetooth speaker for home, and price lower than 40.00 dollars",
+    "name": "Bluetooth Speaker, Portable True Wireless Speaker, Tf Card, Waterproof,360° Full Surround Sound, Deep Bass and Loud Stereo Sound,Suitable for Home/Outdoor",
+    "price_upper": 40.0,
+    "query": "bluetooth speakers"
+   },
+   {
+    "asin": "B08YYYDMKD",
+    "attributes": [
+     "compatible apple"
+    ],
+    "goal_idx": 10563,
+    "goal_options": [
+     "grey"
+    ],
+    "instruction_text": "i am looking for grey color smartwatch band.it should be compatible with apple watch, and price lower than 20.00 dollars",
+    "name": "JIELIELE Compatible with Scrunchie Apple Watch Band 38mm 40mm 41mm 42mm 44mm 45mm for Women, Cute Wristbands Straps Elastic Scrunchy Band for iWatch Series 7 6 5 4 3 2 1 SE (M-42/44 Black)",
+    "price_upper": 20.0,
+    "query": "wearable technology"
+   },
+   {
+    "asin": "B09QXBN74Y",
+    "attributes": [
+     "teen girls"
+    ],
+    "goal_idx": 576,
+    "goal_options": [
+     "a6-purple",
+     "small"
+    ],
+    "instruction_text": "i want to find a small purple tankini top that teen girls can wear, and price lower than 140.00 dollars",
+    "name": "ORT Tankini top Plus Size,Swimsuit Cover ups Womens Two Piece Swimsuits Modest Bathing Suit Printed Tankini Top with Boyshort",
+    "price_upper": 140.0,
+    "query": "women's swimsuits & cover ups"
+   },
+   {
+    "asin": "B09QXBN74Y",
+    "attributes": [
+     "teen girls"
+    ],
+    "goal_idx": 4439,
+    "goal_options": [
+     "a6-purple",
+     "small"
+    ],
+    "instruction_text": "i want to find a small purple tankini top that teen girls can wear, and price lower than 140.00 dollars",
+    "name": "ORT Tankini top Plus Size,Swimsuit Cover ups Womens Two Piece Swimsuits Modest Bathing Suit Printed Tankini Top with Boyshort",
+    "price_upper": 140.0,
+    "query": "women's swimsuits & cover ups"
+   },
+   {
+    "asin": "B000EMU234",
+    "attributes": [
+     "gluten free"
+    ],
+    "goal_idx": 6732,
+    "goal_options": [],
+    "instruction_text": "i am looking for some gluten free powder coffee creamer, and price lower than 80.00 dollars",
+    "name": "COFFEE MATE Fat Free Original Powder Coffee Creamer 16 Oz. Canister | 12 Pack | Non-dairy, Lactose Free, Gluten Free Creamer",
+    "price_upper": 80.0,
+    "query": "milks & creams"
+   },
+   {
+    "asin": "B081ZW6KT2",
+    "attributes": [
+     "classic fit"
+    ],
+    "goal_idx": 1536,
+    "goal_options": [
+     "baby blue",
+     "men"
+    ],
+    "instruction_text": "i am looking for a men's baby blue classic fit shirt, and price lower than 50.00 dollars",
+    "name": "Disney 101 Dalmatians Group Shot Title Logo T-Shirt",
+    "price_upper": 50.0,
+    "query": "men's t-shirts"
+   },
+   {
+    "asin": "B00ECU8IAI",
+    "attributes": [
+     "nickel finish"
+    ],
+    "goal_idx": 10638,
+    "goal_options": [],
+    "instruction_text": "i would like a wall lamp with a nickel finish, and price lower than 80.00 dollars",
+    "name": "Craftmade 7105BNK1 Cecilia Wall Sconce, 1-Light 60 Watt (6\"W x 11\"H), Brushed Polished Nickel",
+    "price_upper": 80.0,
+    "query": "sconces"
+   },
+   {
+    "asin": "B08FRV8QLN",
+    "attributes": [
+     "old fashioned"
+    ],
+    "goal_idx": 11475,
+    "goal_options": [],
+    "instruction_text": "i am interested in old fashioned caramels, and price lower than 60.00 dollars",
+    "name": "Tara's All Natural Handcrafted Gourmet Bourbon Flavored Caramel: Small Batch, Kettle Cooked, 20 Ounce & All Natural Handcrafted Gourmet Sea Salt Caramel: Small Batch, Kettle Cooked, 20 Ounce",
+    "price_upper": 60.0,
+    "query": "milks & creams"
+   },
+   {
+    "asin": "B07YMW9BYH",
+    "attributes": [
+     "double sided",
+     "super soft"
+    ],
+    "goal_idx": 7741,
+    "goal_options": [
+     "black",
+     "90x90\""
+    ],
+    "instruction_text": "i'm looking for a double size, super soft blanket. also, choose 90*90\" black colored one, and price lower than 50.00 dollars",
+    "name": "DISSA Sherpa Fleece Blanket Reversible Sherpa Flannel Blanket Soft Fuzzy Plush Fluffy Blanket Warm Cozy with Strip Perfect Throw for All Seasons for Couch Bed Sofa Chair (Black, 51\"x63\")",
+    "price_upper": 50.0,
+    "query": "throw blankets"
+   },
+   {
+    "asin": "B09SXQJ94X",
+    "attributes": [
+     "high power",
+     "bird watching"
+    ],
+    "goal_idx": 7462,
+    "goal_options": [],
+    "instruction_text": "i looking a high power telescope for bird watching with smartphone adapter and tripod, and price lower than 140.00 dollars",
+    "name": "WENJIA Binoculars for Adults 12x50 Portable Monocular with Night Vision IPX7 Waterproof BAK4 Prism FMC Lens Monocular with Smartphone Adapter and Tripod for Adults Kids Concerts Bird Watching",
+    "price_upper": 140.0,
+    "query": "binoculars & scopes"
+   },
+   {
+    "asin": "B09RQQ3BBS",
+    "attributes": [
+     "light weight"
+    ],
+    "goal_idx": 10887,
+    "goal_options": [
+     "a black"
+    ],
+    "instruction_text": "i want a thin and light weight men's boxers that is black in color, and price lower than 20.00 dollars",
+    "name": "MODOQO Men's Sexy Boxer Briefs Summer Underwear Thin Transparent Ice Silk Boxers Breathable Men Waist Non-Trace Pants",
+    "price_upper": 20.0,
+    "query": "men's underwear"
+   },
+   {
+    "asin": "B094JH14C9",
+    "attributes": [
+     "easy install"
+    ],
+    "goal_idx": 8624,
+    "goal_options": [
+     "teal blue"
+    ],
+    "instruction_text": "i'm looking for a teal blue watch band that's easy to install, and price lower than 40.00 dollars",
+    "name": "JKER Compatible with fenix 6 watch band Easy fit Strap for Fenix 6/Fenix 6 Pro/Fenix 5/Fenix 5 Plus/Forerunner 935/Forerunner 945/Approach S60/Quatix 5 Watch",
+    "price_upper": 40.0,
+    "query": "wearable technology"
+   },
+   {
+    "asin": "B07SZB6VQH",
+    "attributes": [
+     "easy install",
+     "tempered glass"
+    ],
+    "goal_idx": 10135,
+    "goal_options": [
+     "for 2019 dodge ram 8.4 inch"
+    ],
+    "instruction_text": "i wish to buy a tempered glass screen protector which must be easy to instal on an 8.4 inch touchscreen of a 2019 dodge ram, and price lower than 50.00 dollars",
+    "name": "CDEFG Car Screen Protector Center Control Navigation Touch Screen Protector for 2019 2020 2021 Dodge RAM 1500 2500 3500 Uconnect, Tempered Glass HD Scratch Resistance (for 2019 Dodge RAM 12 inch)",
+    "price_upper": 50.0,
+    "query": "screen protectors"
+   },
+   {
+    "asin": "B09GVWK6FX",
+    "attributes": [
+     "storage space"
+    ],
+    "goal_idx": 6278,
+    "goal_options": [],
+    "instruction_text": "i am looking for some storage cabinets for storage space, and price lower than 250.00 dollars",
+    "name": "Inval Engineered Wood Mini Refrigerator/Microwave Storage Cabinet, Washed Oak",
+    "price_upper": 250.0,
+    "query": "cabinets"
+   },
+   {
+    "asin": "B09KKVKQ79",
+    "attributes": [
+     "fleece lined"
+    ],
+    "goal_idx": 8325,
+    "goal_options": [
+     "stripe-grey",
+     "xx-large"
+    ],
+    "instruction_text": "i need fleece lined underwear that is striped grey and comes in an xx-large, and price lower than 60.00 dollars",
+    "name": "JOYSHAPER Lace V Neck Thermal Underwear Sets for Women Long Johns Set Fleece Lined Pajama",
+    "price_upper": 60.0,
+    "query": "women's lingerie, sleep & lounge"
+   },
+   {
+    "asin": "B09N98D1KN",
+    "attributes": [
+     "easy use",
+     "damaged hair"
+    ],
+    "goal_idx": 7374,
+    "goal_options": [
+     "3pcs"
+    ],
+    "instruction_text": "i am looking for an easy to use three piece set of hair growth treatment that works on damaged hair, and price lower than 30.00 dollars",
+    "name": "Saksraar Ginger Prevent Hair Loss Essential Oil, Ginger Germinal Oil, Ginger Hair Growth Serum, Biotin Hair Growth Serum, Essential Oils for Hair Growth and Thickness (1PC)",
+    "price_upper": 30.0,
+    "query": "hair treatment oils"
+   },
+   {
+    "asin": "B07R9RK4X2",
+    "attributes": [
+     "noise cancelling"
+    ],
+    "goal_idx": 5127,
+    "goal_options": [
+     "black"
+    ],
+    "instruction_text": "bluetooth headset for cell phones with noise cancelling in black colour, and price lower than 80.00 dollars",
+    "name": "Giveet Bluetooth Headset for Cell Phones, Office Headset with Noise Cancelling Microphone, Charging Dock, 17h Talking Time for Trucker, Telephone, Skype, Call Center, PC",
+    "price_upper": 80.0,
+    "query": "bluetooth headsets"
+   },
+   {
+    "asin": "B09P58F4SD",
+    "attributes": [
+     "arch support"
+    ],
+    "goal_idx": 3667,
+    "goal_options": [
+     "z5 pink",
+     "5.5"
+    ],
+    "instruction_text": "i am looking for pink slide flip flops with arch support in the size 5.5, and price lower than 40.00 dollars",
+    "name": "NOLDARES Women's Slippers Sandals, Slip On Espadrille Straw Arch Support Wedge Sandals Fashion Casual Slides Flip Flops",
+    "price_upper": 40.0,
+    "query": "women's sandals"
+   },
+   {
+    "asin": "B07R4D5B4V",
+    "attributes": [
+     "high performance"
+    ],
+    "goal_idx": 2985,
+    "goal_options": [
+     "colorful jellyfish"
+    ],
+    "instruction_text": "i am looking for high performance jelly fish color smartwatch, and price lower than 30.00 dollars",
+    "name": "Laffav Compatible with Apple Watch Band 41mm 40mm 38mm 45mm 44mm 42mm for Women Men, Soft Silicone Sport Pattern Replacement Strap Compatible with iWatch SE Series 7 & Series 6 5 4 3 2 1",
+    "price_upper": 30.0,
+    "query": "wearable technology"
+   },
+   {
+    "asin": "B0759WR4Y9",
+    "attributes": [
+     "long lasting"
+    ],
+    "goal_idx": 9191,
+    "goal_options": [
+     "continuous charcoal"
+    ],
+    "instruction_text": "i am looking for long lasting eyeliner in charcoal color, and price lower than 30.00 dollars",
+    "name": "L.A. Girl Ultimate Intense Stay Auto Eyeliner- Super Bright",
+    "price_upper": 30.0,
+    "query": "eyes makeup"
+   },
+   {
+    "asin": "B001E6GFR6",
+    "attributes": [
+     "artificial colors",
+     "high fructose",
+     "artificial flavors"
+    ],
+    "goal_idx": 10920,
+    "goal_options": [],
+    "instruction_text": "i'm looking for healthy granola bars that lack artificial coloring, flavoring and don't include high fructose corn syrup as an ingredient, and price lower than 70.00 dollars",
+    "name": "Nature Valley Granola Bars, Sweet and Salty Nut, Cashew, 6 ct, 6 Boxes,",
+    "price_upper": 70.0,
+    "query": "granola & nutrition bars"
+   },
+   {
+    "asin": "B07WLYZRZJ",
+    "attributes": [
+     "soy wax"
+    ],
+    "goal_idx": 3741,
+    "goal_options": [
+     "seaside  |  citrus"
+    ],
+    "instruction_text": "i'd like to find a soy wax candle that is scented to smell like the sea and citrus, and price lower than 60.00 dollars",
+    "name": "Calyan Wax Co Soy Candle, Evergreen & Eucalyptus Scented Candle- 100% Soy Wax, Fir & Cedar Leaf Essential Oils, Double Wick Candle with Gentle, Natural Scent in Modern Glass Tumbler - 12.5oz",
+    "price_upper": 60.0,
+    "query": "candles"
+   },
+   {
+    "asin": "B08F4S851D",
+    "attributes": [
+     "fast charging",
+     "wireless charging"
+    ],
+    "goal_idx": 8201,
+    "goal_options": [],
+    "instruction_text": "can i get a  wireless charging station dock  for my iphone xr which is fast charging ?, and price lower than 60.00 dollars",
+    "name": "Dual 10W Wireless Charger, [Angle&Height Adjustable] Cell Phone Wireless Charging Stand, Qi-Certified Fast Wireless Charging Station Dock for iPhone 12/11/Pro/Max/X/XR/XS Max/AirPods/Galaxy Samsung",
+    "price_upper": 60.0,
+    "query": "chargers"
+   },
+   {
+    "asin": "B07VBWTZLV",
+    "attributes": [
+     "certified organic",
+     "hair styling"
+    ],
+    "goal_idx": 10261,
+    "goal_options": [
+     "5.5 ounce (pack of 1)"
+    ],
+    "instruction_text": "i want to find 5.5 ounces of hair styling spray that is certified organic, and price lower than 50.00 dollars",
+    "name": "Firm Hold Hair Spray (5.5 oz) - by Avenue Man Hair Products - Strong Hold Styling Thickening Hairspray with Certified Organic Extracts - Paraben-Free Hair Spray for Men and Women - Made in the USA (5.5 oz.)",
+    "price_upper": 50.0,
+    "query": "styling products"
+   },
+   {
+    "asin": "B07VBWTZLV",
+    "attributes": [
+     "paraben free",
+     "hair styling"
+    ],
+    "goal_idx": 11718,
+    "goal_options": [
+     "5.5 ounce (pack of 1)"
+    ],
+    "instruction_text": "i want one pack of paraben free hair styling spray in size 5.5 ounce, and price lower than 60.00 dollars",
+    "name": "Firm Hold Hair Spray (5.5 oz) - by Avenue Man Hair Products - Strong Hold Styling Thickening Hairspray with Certified Organic Extracts - Paraben-Free Hair Spray for Men and Women - Made in the USA (5.5 oz.)",
+    "price_upper": 60.0,
+    "query": "styling products"
+   },
+   {
+    "asin": "B09J2T7GCT",
+    "attributes": [
+     "batteries included"
+    ],
+    "goal_idx": 11095,
+    "goal_options": [],
+    "instruction_text": "i can't find this product, please help! smart remote control, htt381 htct380 htct381 remote control replacement for office with batteries included asap, i'm waiting for your reply in minutes, and price lower than 30.00 dollars",
+    "name": "Smart Remote Controller, Remote Control Replacement Durable ABS Wide Compactibility for Home Use for Sound Bar HT-CT381 HTCT380 HTCT381 for Offices",
+    "price_upper": 30.0,
+    "query": "soundbars"
+   },
+   {
+    "asin": "B002OEPJK6",
+    "attributes": [
+     "engineered wood"
+    ],
+    "goal_idx": 7560,
+    "goal_options": [
+     "black",
+     "king",
+     "bed | night stand & chest"
+    ],
+    "instruction_text": "i'm looking for a black colored king sized bed with night stand and chest made of engineered wood, and price lower than 710.00 dollars",
+    "name": "Bedford Black Queen Bed & Nightstand by Home Styles",
+    "price_upper": 710.0,
+    "query": "nightstands"
+   },
+   {
+    "asin": "B08W5BN4FK",
+    "attributes": [
+     "wireless bluetooth"
+    ],
+    "goal_idx": 4563,
+    "goal_options": [],
+    "instruction_text": "i need a wireless amplifier with bluetooth, and price lower than 70.00 dollars",
+    "name": "Pyle Wireless Bluetooth Stereo Power Amplifier - 200W Dual Channel Sound Audio Stereo Receiver w/RCA, USB, SD, MIC in, FM Radio, for Home Computer via RCA - PDA29BU.5",
+    "price_upper": 70.0,
+    "query": "receivers & amplifiers"
+   },
+   {
+    "asin": "B000AMUL9S",
+    "attributes": [
+     "easy install"
+    ],
+    "goal_idx": 540,
+    "goal_options": [
+     "106\""
+    ],
+    "instruction_text": "i am looking for projector screens of size 106\" that are easy to install, and price lower than 130.00 dollars",
+    "name": "Elite Screens Manual Series, 84-INCH 16:9, Pull Down Manual Projector Screen with AUTO LOCK, Movie Home Theater 8K / 4K Ultra HD 3D Ready, 2-YEAR WARRANTY, M84UWH, 16:9, Black",
+    "price_upper": 130.0,
+    "query": "projection screens"
+   },
+   {
+    "asin": "B000AMUL9S",
+    "attributes": [
+     "ultra hd",
+     "easy install"
+    ],
+    "goal_idx": 2065,
+    "goal_options": [
+     "white",
+     "projector screen + 6\" white projector screen",
+     "136\"",
+     "manual"
+    ],
+    "instruction_text": "i'm looking for a easy to install ultra hd manual projector screen in size 136 inch. choose the ones that come in color white, and price lower than 130.00 dollars",
+    "name": "Elite Screens Manual Series, 84-INCH 16:9, Pull Down Manual Projector Screen with AUTO LOCK, Movie Home Theater 8K / 4K Ultra HD 3D Ready, 2-YEAR WARRANTY, M84UWH, 16:9, Black",
+    "price_upper": 130.0,
+    "query": "projection screens"
+   },
+   {
+    "asin": "B000AMUL9S",
+    "attributes": [
+     "ultra hd"
+    ],
+    "goal_idx": 4325,
+    "goal_options": [
+     "black | white",
+     "150\""
+    ],
+    "instruction_text": "i am looking for 150\"  white color 4k ultra hd 3d ready projector screen, and price lower than 130.00 dollars",
+    "name": "Elite Screens Manual Series, 84-INCH 16:9, Pull Down Manual Projector Screen with AUTO LOCK, Movie Home Theater 8K / 4K Ultra HD 3D Ready, 2-YEAR WARRANTY, M84UWH, 16:9, Black",
+    "price_upper": 130.0,
+    "query": "projection screens"
+   },
+   {
+    "asin": "B000AMUL9S",
+    "attributes": [
+     "ultra hd",
+     "easy install"
+    ],
+    "goal_idx": 4544,
+    "goal_options": [
+     "black | white",
+     "projector screen + 6\" white projector screen",
+     "113\"",
+     "1:1, apect ratio"
+    ],
+    "instruction_text": "need a projection screen that is ultra hd and is easy to install. i'm looking for black/white version with 113\" size. aspect ratio needs to be 1:1 and pattern is projector screen + 6\" white screen, and price lower than 130.00 dollars",
+    "name": "Elite Screens Manual Series, 84-INCH 16:9, Pull Down Manual Projector Screen with AUTO LOCK, Movie Home Theater 8K / 4K Ultra HD 3D Ready, 2-YEAR WARRANTY, M84UWH, 16:9, Black",
+    "price_upper": 130.0,
+    "query": "projection screens"
+   },
+   {
+    "asin": "B000AMUL9S",
+    "attributes": [
+     "ultra hd"
+    ],
+    "goal_idx": 10708,
+    "goal_options": [
+     "black | white",
+     "projector screen",
+     "84\"",
+     "16:9, aspect ratio"
+    ],
+    "instruction_text": "i would like a black 84\" projection screen with a 16:9 ultra hd aspect ratio, and price lower than 130.00 dollars",
+    "name": "Elite Screens Manual Series, 84-INCH 16:9, Pull Down Manual Projector Screen with AUTO LOCK, Movie Home Theater 8K / 4K Ultra HD 3D Ready, 2-YEAR WARRANTY, M84UWH, 16:9, Black",
+    "price_upper": 130.0,
+    "query": "projection screens"
+   },
+   {
+    "asin": "B08LW5QSR4",
+    "attributes": [
+     "machine washable"
+    ],
+    "goal_idx": 3604,
+    "goal_options": [
+     "magenta green",
+     "60\" x 80\" for adults"
+    ],
+    "instruction_text": "i am interested in buying machine washable throws which are in magenta green color and the size should be 60\" x 80\" for adults, and price lower than 40.00 dollars",
+    "name": "Lunarable East Throw Blanket, Japanese Cherry Blossom Sakura Buds Springtime Travel Destinations Seasonal, Flannel Fleece Accent Piece Soft Couch Cover for Adults, 50\" x 70\", Coral Pink",
+    "price_upper": 40.0,
+    "query": "throw blankets"
+   },
+   {
+    "asin": "B077D5N474",
+    "attributes": [
+     "ethylene vinyl",
+     "vinyl acetate",
+     "faux fur"
+    ],
+    "goal_idx": 10394,
+    "goal_options": [
+     "9.5 women | 8 men"
+    ],
+    "instruction_text": "i'm looking for fur lined vinyl slippers, and price lower than 40.00 dollars",
+    "name": "QISHENG Men's Women Mules Clogs Slip On Garden Shoes Fur Lined Slides Flip Flops Warm Winter Slipper",
+    "price_upper": 40.0,
+    "query": "men's mules & clogs"
+   },
+   {
+    "asin": "B08R6NCZ95",
+    "attributes": [
+     "non gmo",
+     "gluten free"
+    ],
+    "goal_idx": 9076,
+    "goal_options": [],
+    "instruction_text": "i am looking for a gluten free snacking avocado with non gmo, and price lower than 70.00 dollars",
+    "name": "Earnest Eats Snacking Avocado, Sea Salt Flavor, Freeze Dried Food, Keto Snack, Sugar Free, Non-GMO, Gluten-Free, Vegan, 8 single serve bags",
+    "price_upper": 70.0,
+    "query": "fruit snacks"
+   },
+   {
+    "asin": "B09J2K8K9H",
+    "attributes": [
+     "heavy duty"
+    ],
+    "goal_idx": 3327,
+    "goal_options": [
+     "red"
+    ],
+    "instruction_text": "i would like a red phone heavy duty case, and price lower than 40.00 dollars",
+    "name": "OTTARTAKS iPhone 13 Case with Screen Protector Old American Flag Design iPhone 13 Case for Men Boys Heavy Duty Shockproof Protective Case for iPhone 13 6.1in",
+    "price_upper": 40.0,
+    "query": "iphone accessories"
+   },
+   {
+    "asin": "B07Z4ZSKP4",
+    "attributes": [
+     "vinyl acetate"
+    ],
+    "goal_idx": 11427,
+    "goal_options": [
+     "8.5"
+    ],
+    "instruction_text": "i need a vinyl acetate narrow fit sandals with big buckle. i am a size 8.5, and price lower than 70.00 dollars",
+    "name": "Birkenstock Madrid Big Buckle Bf Graceful Taupe 1016237 Narrow Fit",
+    "price_upper": 70.0,
+    "query": "women's mules & clogs"
+   },
+   {
+    "asin": "B086HHD7JD",
+    "attributes": [
+     "high waist"
+    ],
+    "goal_idx": 3573,
+    "goal_options": [
+     "aztec - black",
+     "large"
+    ],
+    "instruction_text": "i want to buy high waist yoga pants whcih are in azec - black color and are in large size, and price lower than 40.00 dollars",
+    "name": "NDISTIN Women's High Waisted Yoga Pants Athletic Sports Running Leggings Full Length Tummy Control Printable",
+    "price_upper": 40.0,
+    "query": "women's activewear"
+   },
+   {
+    "asin": "B09PZG5T25",
+    "attributes": [
+     "easy use",
+     "wireless bluetooth"
+    ],
+    "goal_idx": 10807,
+    "goal_options": [
+     "black"
+    ],
+    "instruction_text": "i'm looking for a wireless bluetooth speaker that is easy to use and is also black, and price lower than 200.00 dollars",
+    "name": "Audio Pro BT5 Wireless Bluetooth Speaker - Portable, Bluetooth 4.0 w/ 3.5mm Aux, 40W, Powered Speaker with Bass Reflex - Driftwood",
+    "price_upper": 200.0,
+    "query": "speaker"
+   },
+   {
+    "asin": "B096KTWFQW",
+    "attributes": [
+     "easy install"
+    ],
+    "goal_idx": 6297,
+    "goal_options": [
+     "transparent x 6"
+    ],
+    "instruction_text": "i'm looking for an easy to install cell phone safety lanyard patch which has a color specification of transparent x 6, and price lower than 40.00 dollars",
+    "name": "4 Pack Phone Tether Tab, COCASES Phone Lasso Replacement Part for Cell Phone, Safety Lanyard Patch (Black x4)",
+    "price_upper": 40.0,
+    "query": "cell phones"
+   },
+   {
+    "asin": "B087C94L8C",
+    "attributes": [
+     "low carb"
+    ],
+    "goal_idx": 4404,
+    "goal_options": [
+     "stupid hot",
+     "24 pack"
+    ],
+    "instruction_text": "i want to buy a twenty four pack of stupid hot low carb pork rinds, and price lower than 30.00 dollars",
+    "name": "Pork King Good Dill Pickle Pork Rinds (Chicharrones) (4 Pack) Keto Snacks",
+    "price_upper": 30.0,
+    "query": "snack crackers"
+   },
+   {
+    "asin": "B00JJ5BPYM",
+    "attributes": [
+     "individually wrapped"
+    ],
+    "goal_idx": 10213,
+    "goal_options": [
+     "spicy beef",
+     "12 count (pack of 1)"
+    ],
+    "instruction_text": "i'm looking for a 12-pack of individually wrapped, spicy beef jamaican style patties, and price lower than 130.00 dollars",
+    "name": "Jamaican Style Patties, Baked (Spicy Beef, 1 Case of 12-2 Packs)",
+    "price_upper": 130.0,
+    "query": "frozen"
+   },
+   {
+    "asin": "B003U3A428",
+    "attributes": [
+     "batteries included",
+     "aaa batteries"
+    ],
+    "goal_idx": 2271,
+    "goal_options": [],
+    "instruction_text": "i would like a surveillance camera with aaa batteries included, and price lower than 60.00 dollars",
+    "name": "VideoSecu 4 x Dummy Security Camera Fake Bullet Cameras Infrared LEDs Flashing Light Home CCTV Surveillance 1QU",
+    "price_upper": 60.0,
+    "query": "simulated cameras"
+   },
+   {
+    "asin": "B00182JYZ6",
+    "attributes": [
+     "easy use"
+    ],
+    "goal_idx": 638,
+    "goal_options": [
+     "6a light cool brown"
+    ],
+    "instruction_text": "i am looking for a light cool brown easy to use hair color kit, and price lower than 40.00 dollars",
+    "name": "Clairol Natural Instincts Ammonia-Free Hair Color Kit, 3.5 Brown Black (1 Application)",
+    "price_upper": 40.0,
+    "query": "hair coloring products"
+   },
+   {
+    "asin": "B00182JYZ6",
+    "attributes": [
+     "coconut oil",
+     "permanent hair"
+    ],
+    "goal_idx": 3289,
+    "goal_options": [
+     "6g vibrant light golden brown",
+     "1 count (pack of 1)"
+    ],
+    "instruction_text": "i want a one count pack of brown permanent hair color with coconut oil, and price lower than 50.00 dollars",
+    "name": "Clairol Natural Instincts Ammonia-Free Hair Color Kit, 3.5 Brown Black (1 Application)",
+    "price_upper": 50.0,
+    "query": "hair coloring products"
+   },
+   {
+    "asin": "B00182JYZ6",
+    "attributes": [
+     "easy use"
+    ],
+    "goal_idx": 11388,
+    "goal_options": [
+     "6a light cool brown"
+    ],
+    "instruction_text": "i am looking for a light cool brown easy to use hair color kit, and price lower than 50.00 dollars",
+    "name": "Clairol Natural Instincts Ammonia-Free Hair Color Kit, 3.5 Brown Black (1 Application)",
+    "price_upper": 50.0,
+    "query": "hair coloring products"
+   },
+   {
+    "asin": "B07TTQNQRQ",
+    "attributes": [
+     "storage case"
+    ],
+    "goal_idx": 728,
+    "goal_options": [],
+    "instruction_text": "i would like a storage case for my dentures, and price lower than 140.00 dollars",
+    "name": "FeiFei66 Fashion Denture Bath Appliance False Teeth Box Storage Case Rinsing Basket",
+    "price_upper": 140.0,
+    "query": "denture care"
+   },
+   {
+    "asin": "B09T37VZCK",
+    "attributes": [
+     "high quality",
+     "beauty salon"
+    ],
+    "goal_idx": 4723,
+    "goal_options": [
+     "c",
+     "180x60cm(71x24inch)"
+    ],
+    "instruction_text": "i need some high quality covers for a massage bed in my beauty salon; it's 71 x 24 inches and i'd prefer the \"c\" colour, and price lower than 180.00 dollars",
+    "name": "HJZHBSX Massage Table Sheet Sets, Spa Beauty Bed Sheet, European Solid Color Salon Spa Massage Bed Cover Beauty Salon Bed Bedspread Set 4-Piece (Color : B, Size : 185x70cm(73x28inch))",
+    "price_upper": 180.0,
+    "query": "salon & spa equipment"
+   },
+   {
+    "asin": "B085NH2C7W",
+    "attributes": [
+     "long sleeve"
+    ],
+    "goal_idx": 9201,
+    "goal_options": [
+     "red",
+     "large"
+    ],
+    "instruction_text": "i want a large red sweatshirt with long sleeves, and price lower than 30.00 dollars",
+    "name": "VEKDONE Men's Mask Skull Tank Tops Hoodie Sweatshirt Sleeveless Bodybuilding Training Gym Shirts Tops Blouse",
+    "price_upper": 30.0,
+    "query": "men's tuxedo shirts"
+   },
+   {
+    "asin": "B095C4XZCW",
+    "attributes": [
+     "water resistant"
+    ],
+    "goal_idx": 6615,
+    "goal_options": [
+     "black-style6"
+    ],
+    "instruction_text": "i want a black playstation 1 console airpods water proof case, and price lower than 140.00 dollars",
+    "name": "Playstation 1 Console AirPods Case 1&2 Comes with a Key Chain, Compatible with Wired Charging, Personalized and Customized Patterned Prints, and Hard PC Protection Shockproof Shell",
+    "price_upper": 140.0,
+    "query": "playstation"
+   },
+   {
+    "asin": "B09F6Q2228",
+    "attributes": [
+     "cupcake picks",
+     "party supplies"
+    ],
+    "goal_idx": 5739,
+    "goal_options": [
+     "rose gold"
+    ],
+    "instruction_text": "looking for cup cake picks for party supplies of rose gold colour, and price lower than 30.00 dollars",
+    "name": "30 PCS Love Heart Cupcake Toppers Glitter Mixed Size Wedding Engagement Cupcake Picks Decorations for Wedding Anniversary Bridal Shower Birthday Valentine's Day Party Supplies Silver",
+    "price_upper": 30.0,
+    "query": "toothpicks"
+   },
+   {
+    "asin": "B09L6QB5FC",
+    "attributes": [
+     "white finish"
+    ],
+    "goal_idx": 12032,
+    "goal_options": [
+     "copper"
+    ],
+    "instruction_text": "i'm looking for a wings set of 2 white finish heavy home office desk, and price lower than 140.00 dollars",
+    "name": "Urbalabs When Pigs Fly The Flying Pig Cast Iron Figurine with Wings Set of 2 White Finish Heavy Home Office Desk Industrial Rustic Farmhouse Paperweight Paintable Decor (White)",
+    "price_upper": 140.0,
+    "query": "home office desks"
+   },
+   {
+    "asin": "B09QPDZ1P2",
+    "attributes": [
+     "machine wash"
+    ],
+    "goal_idx": 9713,
+    "goal_options": [
+     "purple",
+     "men",
+     "x-large"
+    ],
+    "instruction_text": "i would like a machine washable tank that is purple and in a men's x-large, and price lower than 40.00 dollars",
+    "name": "Ganesha Elephant Buddha Mandala Yoga - Namaste Om Mantra Zen Tank Top",
+    "price_upper": 40.0,
+    "query": "men's tank tops"
+   },
+   {
+    "asin": "B09SPZM8VL",
+    "attributes": [
+     "short sleeve",
+     "regular fit"
+    ],
+    "goal_idx": 6172,
+    "goal_options": [
+     "3x-large"
+    ],
+    "instruction_text": "i want a regular fit tee with short sleeves. i am 3x-large in size, and price lower than 30.00 dollars",
+    "name": "T Shirts for Men Graphic Funny,Men's 3D Graphic Plus Size T-Shirt Short Sleeve Daily Tops Basic Round Neck Graphic Tees",
+    "price_upper": 30.0,
+    "query": "men's henleys"
+   },
+   {
+    "asin": "B08XZ7N4NL",
+    "attributes": [
+     "eco friendly"
+    ],
+    "goal_idx": 9832,
+    "goal_options": [],
+    "instruction_text": "i would like some eco friendly nail cleaning brushes, and price lower than 40.00 dollars",
+    "name": "2 Pieces Natural Wooden bristle nail brushes for Cleaning Fingernail and Toenail non-slip two-sided Grip Hand foot Nail Brush Set Manicure Pedicure Scrubber Supply Men Women Girls",
+    "price_upper": 40.0,
+    "query": "foot, hand & nail care"
+   },
+   {
+    "asin": "B09JZ3Q2DD",
+    "attributes": [
+     "fleece throw"
+    ],
+    "goal_idx": 296,
+    "goal_options": [
+     "maroon",
+     "throw(50\"x60\")"
+    ],
+    "instruction_text": "i am looking for a fleece throw that is maroon and 50\" by 60\", and price lower than 60.00 dollars",
+    "name": "VEULENT Sherpa Fleece Throw Blanket Super Soft Fluffy Houndstooth Blanket for Bed Couch Sofa Floor (White Black, Twin(60\"X80\"))",
+    "price_upper": 60.0,
+    "query": "throw blankets"
+   },
+   {
+    "asin": "B09JZ3Q2DD",
+    "attributes": [
+     "fleece throw"
+    ],
+    "goal_idx": 11215,
+    "goal_options": [
+     "maroon",
+     "throw(50\"x60\")"
+    ],
+    "instruction_text": "i am looking for a fleece throw that is maroon and 50\" by 60\", and price lower than 50.00 dollars",
+    "name": "VEULENT Sherpa Fleece Throw Blanket Super Soft Fluffy Houndstooth Blanket for Bed Couch Sofa Floor (White Black, Twin(60\"X80\"))",
+    "price_upper": 50.0,
+    "query": "throw blankets"
+   },
+   {
+    "asin": "B08FMY7SKC",
+    "attributes": [
+     "core i5"
+    ],
+    "goal_idx": 2784,
+    "goal_options": [],
+    "instruction_text": "i need a core i5 optiplex computer, and price lower than 900.00 dollars",
+    "name": "2021 Newest Dell OptiPlex 3080 Micro Form Factor Business Desktop, Intel Core i5-10500T, 16GB DDR4 RAM, 512GB SSD, WiFi, HDMI, Bluetooth, Wired Keyboard&Mouse, Windows 10 Pro",
+    "price_upper": 900.0,
+    "query": "pc"
+   },
+   {
+    "asin": "B09239MNBY",
+    "attributes": [
+     "gluten free"
+    ],
+    "goal_idx": 7751,
+    "goal_options": [
+     "cheese x2"
+    ],
+    "instruction_text": "i am looking for cheese flavored gluten free rice snacks, and price lower than 40.00 dollars",
+    "name": "Good Rice Flavored Rice Snacks (SMOKED MEAT X2)",
+    "price_upper": 40.0,
+    "query": "meat snacks"
+   },
+   {
+    "asin": "B07C55SZW3",
+    "attributes": [
+     "gluten free"
+    ],
+    "goal_idx": 9411,
+    "goal_options": [
+     "peanut butter dark chocolate"
+    ],
+    "instruction_text": "i looking a gluten free  peanut butter dark chocolate, and price lower than 50.00 dollars",
+    "name": "KIND Healthy Grains Bars, Peanut Butter Dark Chocolate, Gluten Free, 40 Count",
+    "price_upper": 50.0,
+    "query": "breakfast foods"
+   },
+   {
+    "asin": "B09LR824C8",
+    "attributes": [
+     "aaa batteries"
+    ],
+    "goal_idx": 11724,
+    "goal_options": [],
+    "instruction_text": "i'm looking for aaa batteries that will serve as replacement for my soundbar controller, and price lower than 30.00 dollars",
+    "name": "Remote Control, Multi-Functional Replacement Soundbar Remote Controller Large Buttons, for LG Soundbar NB2420A NB3520A NB3520A2 NB3520ANB NB3530A NB3530ANB NB4530B NB3532A",
+    "price_upper": 30.0,
+    "query": "soundbars"
+   },
+   {
+    "asin": "B07ZNTM2L5",
+    "attributes": [
+     "hair treatment",
+     "natural hair"
+    ],
+    "goal_idx": 8250,
+    "goal_options": [
+     "4.06 fl oz (pack of 1)"
+    ],
+    "instruction_text": "please re order deep conditioning hair treatment for my natural hair and should be 4.06 fl oz, and price lower than 30.00 dollars",
+    "name": "PURC Conditioner, Firstfly Advanced Molecular Keratin Magical Hair Treatment Mask Professtional Hair Conditioner, 5 Seconds Repairs Damage Hair Root Hair Tonic Keratin Hair & Scalp Treatment",
+    "price_upper": 30.0,
+    "query": "hair masks"
+   },
+   {
+    "asin": "B07GQ711QJ",
+    "attributes": [
+     "carrying case",
+     "bird watching"
+    ],
+    "goal_idx": 2353,
+    "goal_options": [],
+    "instruction_text": "i'm looking for a waterproof carrying case that can help secure my binoculars while bird watching, and price lower than 80.00 dollars",
+    "name": "BARSKA Optics 10x26mm Binoculars Waterproof Fog Proof Binoculars Hiking Bird Watching and Other Outdoor Activities",
+    "price_upper": 80.0,
+    "query": "binoculars & scopes"
+   },
+   {
+    "asin": "B0738CN28V",
+    "attributes": [
+     "easy apply"
+    ],
+    "goal_idx": 3926,
+    "goal_options": [
+     "011-5pairs"
+    ],
+    "instruction_text": "lasgoos design natural look lightweight reusable false eyelashes eye makeup 11/5 pairs/box (a10) find it and tell me, and price lower than 50.00 dollars",
+    "name": "Luxurious Siberian Mink 3D False Eyelash LASGOOS Design Natural Look Messy Cross Daily Light Weight Reusable Fake Eyelashes Eye Makeup 5 Pairs/Box (A10)",
+    "price_upper": 50.0,
+    "query": "eyes makeup"
+   },
+   {
+    "asin": "B09RHVVMJM",
+    "attributes": [
+     "great gift",
+     "gift basket"
+    ],
+    "goal_idx": 2076,
+    "goal_options": [],
+    "instruction_text": "i'm looking for  groceries for great gift and gift basket, and price lower than 100.00 dollars",
+    "name": "Tea Lovers Gift Basket with Gourmet Meat, Cheese, and Chocolates. Great gift for Holiday, Birthday, Valentine's, Easter, Mother's Day, Father's Day",
+    "price_upper": 100.0,
+    "query": "cheeses"
+   },
+   {
+    "asin": "B09JSQ3FBZ",
+    "attributes": [
+     "long sleeve",
+     "daily wear"
+    ],
+    "goal_idx": 8756,
+    "goal_options": [
+     "halloweenboo",
+     "x-small"
+    ],
+    "instruction_text": "i'm looking for a halloweenboo  and a x small long sleeve and should be for a daily wear and comfortable, and price lower than 60.00 dollars",
+    "name": "Custom Photo Long Sleeve Shirts for Men Personalized Skulls Hippie Shirt with Girlfriend Face Button Up Dress for Party",
+    "price_upper": 60.0,
+    "query": "men's dress shirts"
+   },
+   {
+    "asin": "B09KNHG351",
+    "attributes": [
+     "regular fit",
+     "button closure"
+    ],
+    "goal_idx": 2143,
+    "goal_options": [
+     "charcoalgrey",
+     "large"
+    ],
+    "instruction_text": "i need a large button closure shirt that is charcoal grey in color. pick the regular fit one, and price lower than 40.00 dollars",
+    "name": "Esabel.C Mens Casual Button Down Shirts Rugular Fit Long Sleeve Fashion Shirts",
+    "price_upper": 40.0,
+    "query": "men's casual button-down shirts"
+   },
+   {
+    "asin": "B085BR7DM2",
+    "attributes": [
+     "stereo sound"
+    ],
+    "goal_idx": 3487,
+    "goal_options": [
+     "polish black"
+    ],
+    "instruction_text": "i'd like to get wireless earphones that feature stereo sound. the color should be black, and price lower than 70.00 dollars",
+    "name": "IHAO Sport Headphones Wireless Earphones with Mic 4 in 1 Multifunctional Mini Fan Power Bank Flashlight HiFi Bass Stereo Sound Waterproof Noise Reduction Headset for Gym Home Office-Luxury Pink F7",
+    "price_upper": 70.0,
+    "query": "headphones"
+   },
+   {
+    "asin": "B085BR7DM2",
+    "attributes": [
+     "stereo sound"
+    ],
+    "goal_idx": 5281,
+    "goal_options": [
+     "polish black"
+    ],
+    "instruction_text": "i'd like to get wireless earphones that feature stereo sound. the color should be black, and price lower than 70.00 dollars",
+    "name": "IHAO Sport Headphones Wireless Earphones with Mic 4 in 1 Multifunctional Mini Fan Power Bank Flashlight HiFi Bass Stereo Sound Waterproof Noise Reduction Headset for Gym Home Office-Luxury Pink F7",
+    "price_upper": 70.0,
+    "query": "headphones"
+   },
+   {
+    "asin": "B08D7CT1XX",
+    "attributes": [
+     "officially licensed"
+    ],
+    "goal_idx": 10509,
+    "goal_options": [
+     "men",
+     "3x-large"
+    ],
+    "instruction_text": "add to my list a wizard of oz  3xlarge tshirt for men. should be officially licenced, and price lower than 40.00 dollars",
+    "name": "The Wizard of Oz Put 'em Up T-Shirt",
+    "price_upper": 40.0,
+    "query": "men's t-shirts & tanks"
+   },
+   {
+    "asin": "B016KWUP3I",
+    "attributes": [
+     "argan oil"
+    ],
+    "goal_idx": 10831,
+    "goal_options": [
+     "10 fl oz (pack of 2)"
+    ],
+    "instruction_text": "i want a 2 pack argan oil shampoo and conditioner set, and price lower than 60.00 dollars",
+    "name": "Argan Oil Shampoo and Conditioner Set - Sulfate Free Shampoo and Conditioner for Dry Damaged Hair with Argan Oil of Morocco - Volumizing Shampoo and Conditioner for Curly Frizzy Dry Damaged Hair",
+    "price_upper": 60.0,
+    "query": "shampoo & conditioner"
+   },
+   {
+    "asin": "B07WF7ZYP6",
+    "attributes": [
+     "high power",
+     "power amplifier"
+    ],
+    "goal_idx": 8388,
+    "goal_options": [],
+    "instruction_text": "i want some headphone amplifiers with a power adapter, and price lower than 60.00 dollars",
+    "name": "Headphone Amplifier Donner 4 Channels Metal Stereo Audio Amplifier,Mini Earphone Splitter with Power Adapter-4x Quarter Inch Balanced TRS Headphones Output and TRS Audio Input for Sound Mixer-DEL-4",
+    "price_upper": 60.0,
+    "query": "signal boosters"
+   },
+   {
+    "asin": "B08Y3XH857",
+    "attributes": [
+     "individually wrapped",
+     "valentine day"
+    ],
+    "goal_idx": 2456,
+    "goal_options": [],
+    "instruction_text": "i would like to buy a valentine's day party bag with 60 chocolate individually wrapped candies, and price lower than 70.00 dollars",
+    "name": "Hershey Assorted Miniatures Milk and Dark Chocolate Assortment Candy, Valentine's Day, 33.43 Oz. Party Bag (60 Pieces),1 Pack of 60",
+    "price_upper": 70.0,
+    "query": "party mix"
+   },
+   {
+    "asin": "B01MT94PJW",
+    "attributes": [
+     "anti perspirant",
+     "travel size"
+    ],
+    "goal_idx": 10173,
+    "goal_options": [
+     "jean-marie farina"
+    ],
+    "instruction_text": "look for antiperspirant in the jean-marie farina scent. buy the travel size, and price lower than 30.00 dollars",
+    "name": "Roger & Gallet | Roll On Deodorant for Women | 48 Hour Anti Perspirant Deodorant | Bois D' Orange 1.6 Oz",
+    "price_upper": 30.0,
+    "query": "deodorants & antiperspirants"
+   },
+   {
+    "asin": "B09PYVG834",
+    "attributes": [
+     "solid wood"
+    ],
+    "goal_idx": 8490,
+    "goal_options": [
+     "espresso"
+    ],
+    "instruction_text": "i am interested in a console table that is made out of solid wood and is espresso colored, and price lower than 370.00 dollars",
+    "name": "Tidyard Console Table with 2 Storage Drawers and Slatted Shelf Wood Sofa Table White for Entryway, Hallway, Living Room, Home Furniture 58 x 14 x 32 Inches (L x W x H)",
+    "price_upper": 370.0,
+    "query": "console tables"
+   },
+   {
+    "asin": "B094QNSQ3V",
+    "attributes": [
+     "non slip"
+    ],
+    "goal_idx": 2421,
+    "goal_options": [
+     "tzz7-3_black",
+     "8.5 wide"
+    ],
+    "instruction_text": "i would like a 8.5 inch wide black non slip platform wedge pair, and price lower than 50.00 dollars",
+    "name": "Bitiger Mens Clog Comfortable Garden Sandals Casual Water Shoes for Daily Life & Nursing Clog for Work",
+    "price_upper": 50.0,
+    "query": "men's mules & clogs"
+   },
+   {
+    "asin": "B09QC9H4S6",
+    "attributes": [
+     "machine wash",
+     "heathers cotton",
+     "cotton heather"
+    ],
+    "goal_idx": 6944,
+    "goal_options": [
+     "dark heather",
+     "women",
+     "x-large"
+    ],
+    "instruction_text": "i would like a women's xl dark heather cotton tank top that's machine washable, and price lower than 40.00 dollars",
+    "name": "I do what I want Middle Finger Funny Angry Cat Lover Gift Tank Top",
+    "price_upper": 40.0,
+    "query": "men's tank tops"
+   }
+  ]
+ }
+}

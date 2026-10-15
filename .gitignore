@@ -1,0 +1,57 @@
+# === 虚拟环境（大坑，13G）===
+.conda-envs/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# === clone 的外部仓库 ===
+webshop_repo/
+
+# === 数据 / 模型 / 输出 ===
+data/
+datasets/
+outputs/
+checkpoints/
+results/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+*.h5
+*.pkl
+*.npy
+*.npz
+*.jsonl
+*.parquet
+*.csv
+*.zip
+*.tar
+*.tar.gz
+
+# === 日志 / 缓存 ===
+logs/
+*.log
+.cache/
+wandb/
+runs/
+.pytest_cache/
+
+# === 编辑器 / 系统 ===
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# === 环境缓存 ===
+.conda-pkgs/
+.pip-cache/
+.cache/
+pip-wheel-metadata/
+
+# === 运行输出 ===
+data_out/

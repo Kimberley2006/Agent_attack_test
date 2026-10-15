@@ -1,0 +1,88 @@
+# ============================================================================
+# Clean Baseline 实验配置 v1（第一版，调试阶段后冻结）
+# 任何字段在正式 baseline 开始前改动都必须升级版本号并说明原因。
+# ============================================================================
+
+run:
+  run_id_prefix: clean-baseline
+  output_root: /cache/wuhan/runs          # 大文件（张量、轨迹）输出根目录
+  seed: 233                               # WebShop 官方 goal 洗牌种子，不可改
+
+model:
+  model_path: /cache/wuhan/models/Qwen3.8-27B
+  revision: 1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0   # HF revision（已本地化）
+  dtype: bfloat16
+  device: cuda:0                          # 由启动脚本的 CUDA_VISIBLE_DEVICES 决定实际卡
+  attn_implementation: sdpa               # 基础采集用 sdpa；detailed 注意力采集需 eager，单独验证
+  trust_remote_code: false
+
+generation:
+  do_sample: false                        # greedy，实验控制用；非官方推荐配置
+  temperature: null
+  top_p: null
+  top_k: null
+  max_new_tokens: 2048                    # 每回合输出预算，调试集检查是否足够
+  repetition_penalty: 1.0
+  # 思考模式：保留原生思考（Qwen3.5 chat template 原生支持）
+  enable_thinking: true
+  reasoning_effort: native                # native = 不传该参数，走模板默认（xhigh）
+  # 说明：思考内容计入 max_new_tokens；若调试发现预算不足，只允许在冻结前上调并记录。
+
+agent:
+  framework: react
+  max_turns: 30                           # 每任务最多决策回合数
+  prompt_version: react-webshop-v2        # v2: 动作格式示例改为具体实例（v1 尖括号占位符被模型照抄）
+  history: full                           # 保存完整历史，第一版不做摘要
+  parse_error_feedback: >-
+    Your last output could not be parsed as an action. You must output exactly
+    one action on the last line, in one of these formats:
+    Action: search[<keywords>]
+    Action: click[<button or item text from the current page>]
+    Output it again now.
+
+environment:
+  service_url: http://127.0.0.1:5001
+  package: princeton-nlp/WebShop@64fa2a5c15c7daa698b9ac93f5bb5437b634c9bd
+  observation_mode: text                  # WebShop 文本观测
+  product_library: full                   # full = items_shuffle.json（正式商品库）
+  paths:
+    items_shuffle: /cache/wuhan/webshop_data/items_shuffle.json
+    items_ins_v2: /cache/wuhan/webshop_data/items_ins_v2.json
+    items_human_ins: /temp/wuhan/Agent_Attack/webshop_repo/data/items_human_ins.json
+  human_goals: true
+  search_engine:
+    backend: rank_bm25.BM25Okapi          # 替代 pyserini/Lucene（Java 不可用）；Lucene 默认同为 BM25 打分
+    doc_fields: ["Title", "Description", "BulletPoints[0]", "options"]   # 与官方 convert_product_file_format.py 一致
+    k: 50                                 # SEARCH_RETURN_N，官方值
+  num_products: null                      # null = 全量商品库
+
+tasks:
+  registry: /temp/wuhan/Agent_Attack/task_registry.json
+  debug_size: 10
+  dev_size: 20
+  baseline_size: 100
+  split_seed: 20261011
+  asin_disjoint: true                     # 不同集合的商品（goal asin）互不重叠
+
+representation:
+  collect: basic                          # off | basic | detailed
+  # basic：全部任务——各层 prefill 末 token hidden state；动作 token 的 residual / 模块输出 / FFN 输出
+  # detailed：预选少量任务——full-attention 层注意力权重、linear-attention(DeltaNet) 状态、更多 token 位置
+  save_dtype: float16
+  layers: all                             # all = 64 层
+  tensor_dir: tensors                     # 相对每个 run 目录
+
+logging:
+  fields_version: log-v1
+  save_prompt_tokens: true
+  save_full_history: true
+
+defense:
+  enabled: false                          # 第一版不接 detector / 门控
+
+notes: >-
+  官方推荐推理为采样（temperature=1.0, top_p=0.95, top_k=20）；本实验为配对控制
+  使用 greedy，结果不得表述为官方推荐配置下的性能。
+  内核配置（必须与 clean/attack 双侧一致）：transformers 5.19.0、torch 2.8.0+cu128、
+  flash-linear-attention 0.5.2 已安装、causal-conv1d 未装（参考实现回退，正确但慢）、
+  attention 用 sdpa（detailed 采集时 eager，已验证与 sdpa 输出逐 token 一致）。
