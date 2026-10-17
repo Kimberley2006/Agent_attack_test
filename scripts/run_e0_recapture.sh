@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
 MODEL_PATH=${AA_MODEL_PATH:-/data/wangxiang/models/Qwen3.8-27B}
-MODEL_PYTHON=${AA_MODEL_PYTHON:-/data/wangxiang/conda/envs/main/bin/python}
+MODEL_PYTHON=${AA_MODEL_PYTHON:-$PWD/.conda-envs/model-cu128/bin/python}
 WEBSHOP_PYTHON=${AA_WEBSHOP_PYTHON:-$PWD/.conda-envs/webshop/bin/python}
 OUT_ROOT=${AA_E0_OUT_ROOT:-$PWD/data_out/branch_v11_recapture}
 CAPTURE_DIR="$OUT_ROOT/captures"
@@ -12,6 +12,7 @@ SOCKET=${AA_E0_SOCKET:-/tmp/aa_e0_model.sock}
 GPU=${AA_GPU:-0}
 DEVICE_MAP=${AA_DEVICE_MAP:-balanced}
 GPU_RESERVE_GB=${AA_GPU_RESERVE_GB:-6}
+POSITIONS_FILE=${AA_POSITIONS_FILE:-$PWD/data_out/attack/positions_20/positions.jsonl}
 
 export WEBSHOP_ITEM_PATH=${WEBSHOP_ITEM_PATH:-$PWD/webshop_repo/data/items_shuffle.json}
 export WEBSHOP_ATTR_PATH=${WEBSHOP_ATTR_PATH:-$PWD/webshop_repo/data/items_ins_v2.json}
@@ -72,7 +73,7 @@ if [ "$ready" -ne 1 ]; then
   exit 3
 fi
 
-common=(--positions data_out/attack/positions_ip/positions.jsonl
+common=(--positions "$POSITIONS_FILE"
   --clean-dirs data_out/clean_debug10_frozen data_out/clean_baseline_100a
                data_out/clean_baseline_100b
   --lang zh --socket "$SOCKET")
@@ -85,7 +86,7 @@ common=(--positions data_out/attack/positions_ip/positions.jsonl
   --only-payloads A1,B1,C1,D1 > "$OUT_ROOT/attack.log" 2>&1
 
 # 缺失文件和行为不一致都意味着旧结果不能直接沿用。
-AA_E0_OUT_ROOT="$OUT_ROOT" AA_CAPTURE_DIR="$CAPTURE_DIR" \
+AA_E0_OUT_ROOT="$OUT_ROOT" AA_CAPTURE_DIR="$CAPTURE_DIR" AA_POSITIONS_FILE="$POSITIONS_FILE" \
   "$WEBSHOP_PYTHON" - <<'PY'
 import json
 import os
@@ -94,7 +95,7 @@ from pathlib import Path
 root = Path(os.environ["AA_E0_OUT_ROOT"])
 captures = Path(os.environ["AA_CAPTURE_DIR"])
 positions = [json.loads(line)["position_id"] for line in
-             Path("data_out/attack/positions_ip/positions.jsonl").read_text().splitlines()
+             Path(os.environ["AA_POSITIONS_FILE"]).read_text().splitlines()
              if line.strip()]
 expected = {
     "clean": {f"{p}__CLEAN.json" for p in positions[:12]},

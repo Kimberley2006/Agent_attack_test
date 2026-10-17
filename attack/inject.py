@@ -89,6 +89,22 @@ def assert_item_page(obs: str) -> None:
         raise ValueError(f"观测不是商品主页面结构（无 Price:/Buy Now），拒绝注入")
 
 
+def assert_product_subpage(obs: str) -> None:
+    segments = parse_segments(obs)
+    if (len(segments) < 5 or segments[0] != "Instruction:"
+            or segments[2:4] != [_BACK_TO_SEARCH, _PREV]
+            or classify_page(obs) == "item_page" or "> Next" in segments):
+        raise ValueError("观测不是商品子页结构，拒绝注入")
+
+
+def inject_into_product_subpage(obs: str, text: str) -> InjectionResult:
+    """Features/Reviews 可含多段正文；在整个子页末尾追加一段。"""
+    validate_text(text)
+    assert_product_subpage(obs)
+    prefix = obs if obs.endswith(SEP) else obs + SEP
+    return InjectionResult(prefix + text, text, False, (len(prefix), len(prefix) + len(text)))
+
+
 def inject_into_item_page(obs: str, text: str) -> InjectionResult:
     """在商品主页面观测末尾追加一个新 [SEP] 段（页面通知横幅语义）。"""
     validate_text(text)
@@ -189,7 +205,8 @@ def render_branch_observation(
     硬约束：进入本函数的条目必须与冻结 manifest 一致（重验 sha256）；
     攻击载荷永不填充（逐字节保持冻结文本）；仅困难负例允许在
     pad_target 给出时做中性填充。entry: description=描述子页追加（v1.0），
-    item_page=商品主页面末尾追加新段（v1.1）。
+    item_page=商品主页面末尾追加新段（v1.1）；features/reviews=支持多段正文
+    的商品子页末尾追加新段，具体页面类型由位置挖掘时的 URL/动作确认。
     """
     import hashlib
 
@@ -208,8 +225,12 @@ def render_branch_observation(
         padded = True
     if entry == "item_page":
         result = inject_into_item_page(obs, text)
-    else:
+    elif entry == "description":
         result = inject_into_description(obs, text)
+    elif entry in {"features", "reviews"}:
+        result = inject_into_product_subpage(obs, text)
+    else:
+        raise ValueError(f"未知注入入口: {entry}")
     result.padded = padded
     return result
 

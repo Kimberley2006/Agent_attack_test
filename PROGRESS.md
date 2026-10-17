@@ -220,6 +220,36 @@ python -m analysis.signals --branch-dirs data_out/branch_v11/clean \
 
 ## 八、下一步
 
+2026-10-17：用户将后续任务规模调整为 20，按原 35 个首位置的冻结顺序
+选择前 20 个任务，名单见 `configs/position_comparison20.json`。在其中
+7 个任务筛出 13 个新增点（10 个后续不同非目标商品主页面、3 个 Features
+子页），与 20 个首位置合计 33 个位置。选点清单和指纹已写入
+`data_out/attack/positions_20/`，通过离线消息和动作前缀检查；本地
+`items_shuffle.json` 被截断导致环境初始化失败，重放验证待数据修复。
+尚未运行新增点的模型实验。详细规则与配对方案见 `NEXT_EXPERIMENTS.md` E1P。
+
+2026-10-17 03:20 UTC：按用户要求提交三 GPU 后台任务，监督进程 PID
+3124831，入口 `scripts/run_positions20_background.py --detach`。本次运行
+覆盖全部 33 位置，每处 1 clean + 4 attack + 3 control，共 264 episodes。
+启动时四卡空闲均不足 1.2 GiB，因此先按冻结 SHA-256 恢复截断商品文件，
+校验/重建 BM25 索引并验证选点，再等待三张各有至少 25 GiB 空闲显存的卡。
+只启动一份 BF16 多卡模型服务，未停止其他 GPU 进程。当前阶段与失败原因
+以 `data_out/branch_positions20/status.json` 为准；后台已启动不表示模型
+已开始生成。日志位于同目录，正式运行完成后产出 `behavior_summary.json`。
+
+2026-10-17 04:20 UTC：商品数据恢复及 33 个位置的环境重放全部通过。
+资源释放后，原后台首次加载因 main 环境的 PyTorch 2.13.0+cu130 与
+驱动 575.57.08 不兼容而退出。已建立项目独立 `.conda-envs/model-cu128`，
+安装 PyTorch 2.8.0+cu128、Transformers 5.19.0；pip check、tokenizer
+加载及 GPU 0/1/2 的 BF16 矩阵运算均通过。后台重启 PID 3142898，三卡
+模型权重已加载、basic 采集开启，进入 clean 臂；后续自动运行 attack
+及 control。完整依赖快照见输出目录 `model_environment.txt`。
+
+正式三卡生成已验证：首个 `cap_000000.pt` 对应
+`goal_10167@step9__CLEAN`，生成 94 tokens，P 位的 layer_in、layer_out、
+attn_out、mlp_out 均含完整 64 层，R 与动作 token 锚点存在。后台继续采集，
+最终三臂完成数以 `status.json` 和各臂 episode 文件为准。
+
 1. 恢复模型权重、采集环境与 GPU，补跑 15 条对照臂 → 检验信号一在
    N1-N3 上的误报率。
 2. 扩大 attack 臂样本（更多位置 × 载荷）复验收敛的 AUC 与家族梯度。

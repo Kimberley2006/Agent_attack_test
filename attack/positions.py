@@ -28,7 +28,7 @@ from decimal import Decimal
 from pathlib import Path
 
 from agent.schema import TaskTrajectory, validate_trajectory
-from .inject import classify_page, find_description_region
+from .inject import classify_page, find_description_region, assert_product_subpage
 
 NO_CONSTRAINT_PRICE = 1000000.0
 _PRICE_TEXT_RE = re.compile(r"price lower than ([\d,.]+) dollars", re.IGNORECASE)
@@ -147,6 +147,8 @@ def mine_trajectory(
     max_positions: int = 1,
     entry: str = "description",
 ) -> TaskMineResult:
+    if entry not in {"item_page", "description", "features", "reviews"}:
+        raise ValueError(f"未知注入入口: {entry}")
     problems = validate_trajectory(traj)
     if problems:
         return TaskMineResult(traj.task_id, [], "malformed_trajectory", "; ".join(problems))
@@ -169,16 +171,23 @@ def mine_trajectory(
             if "/item_page/" not in url or classify_page(step.obs) != "item_page":
                 continue
         else:
-            # v1.0 入口：description 子页（由 click[description] 进入）
+            # 子页仅取真实进入动作后的观测，排除无效点击造成的重复停留。
             prev_action = traj.steps[k - 1].action
-            if not prev_action or prev_action.strip().lower() != "click[description]":
+            if not prev_action or prev_action.strip().lower() != f"click[{entry}]":
                 continue
             subpage_kind = _subpage_kind_from_url(step.page_url)
-            if subpage_kind is not None and subpage_kind != "description":
+            if subpage_kind is not None and subpage_kind != entry:
                 continue
-            if classify_page(step.obs) != "description_like":
-                ineligible_reasons.append(f"step{k}: 描述动作后页面结构不符")
-                continue
+            if entry == "description":
+                if classify_page(step.obs) != "description_like":
+                    ineligible_reasons.append(f"step{k}: 描述动作后页面结构不符")
+                    continue
+            else:
+                try:
+                    assert_product_subpage(step.obs)
+                except ValueError:
+                    ineligible_reasons.append(f"step{k}: 子页结构不符")
+                    continue
         asin = _asin_from_url(step.page_url) or _asin_from_url(traj.steps[k - 1].page_url)
         if asin is None:
             ineligible_reasons.append(f"step{k}: 无法从 URL 提取 asin")
@@ -196,7 +205,7 @@ def mine_trajectory(
         # v1.1 判定：超预算商品（预算违规），或非目标商品（诱导错误购买）。
         # WebShop goal 构造保证目标商品价格必在预算内，且合格 agent 的自然
         # 轨迹几乎不访问超预算商品页，因此主场景是"诱导买错商品"。
-        if entry == "item_page":
+        if entry != "description":
             is_goal = asin == (traj.goal.get("asin") if isinstance(traj.goal, dict) else None)
             if is_goal and not over_budget:
                 ineligible_reasons.append(
@@ -234,7 +243,7 @@ def mine_trajectory(
 
     if positions:
         return TaskMineResult(traj.task_id, positions, None, "")
-    entry_label = "商品主页面" if entry == "item_page" else "描述子页"
+    entry_label = "商品主页面" if entry == "item_page" else f"{entry} 子页"
     if not visited_desc:
         return TaskMineResult(traj.task_id, [], f"no_{entry}_visit",
                               f"全程未访问任何{entry_label}（入口未暴露）")

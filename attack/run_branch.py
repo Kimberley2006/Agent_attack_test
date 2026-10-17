@@ -8,7 +8,7 @@
   仅把最后一条 user 消息中的观测替换为注入后观测（attack/control 臂）；
 - clean 臂不改任何内容，用于采集配对的 clean 内部表征；
 - 攻击是否成功由行为离线判定：purchased_asin == position.asin
-  （该商品价格超预算，按构造成立）即"注入生效"。
+  即"注入生效"；预算违规另行记录。
 
 用法（webshop conda 环境）:
   python -m attack.run_branch --positions data_out/attack/positions/positions.jsonl \
@@ -153,6 +153,9 @@ def run_one_branch(wrapper, client, pos, traj, item, k, args, pad_target):
         raise RuntimeError("重放观测不一致")
 
     obs_raw = pos["obs_raw"]
+    entry = pos.get("entry", "item_page") if args.entry == "auto" else args.entry
+    if pos.get("entry") is not None and pos["entry"] != entry:
+        raise ValueError("--entry 与位置记录的入口类型不一致")
     span = list(find_description_region(obs_raw))
     padded = False
     if args.arm == "clean":
@@ -160,9 +163,9 @@ def run_one_branch(wrapper, client, pos, traj, item, k, args, pad_target):
         modified_obs = obs_raw
     else:
         inj = render_branch_observation(obs_raw, item, pad_target=pad_target,
-                                        lang=args.lang, entry=args.entry)
+                                        lang=args.lang, entry=entry)
         verify_only_append(obs_raw, inj.obs, inj.payload_text,
-                           joiner=SEP if args.entry == "item_page" else " ")
+                           joiner=" " if entry == "description" else SEP)
         modified_obs = inj.obs
         span = list(inj.span)
         padded = inj.padded
@@ -178,7 +181,9 @@ def run_one_branch(wrapper, client, pos, traj, item, k, args, pad_target):
         "position": {kk: pos.get(kk) for kk in
                      ("position_id", "task_id", "step_index",
                       "instruction_text", "price_upper", "asin",
-                      "item_title", "item_price", "violation_type")},
+                      "item_title", "item_price", "violation_type",
+                      "position_group", "item_visit_rank")},
+        "entry": entry,
         "injection": {"span": span, "padded": padded,
                       "obs_len_before": len(obs_raw),
                       "obs_len_after": len(modified_obs)},
@@ -211,9 +216,9 @@ def main() -> int:
     ap.add_argument("--max-positions", type=int, default=None)
     ap.add_argument("--only-payloads", default=None,
                     help="逗号分隔 payload_id 列表，缺省取该臂全部")
-    ap.add_argument("--entry", default="item_page",
-                    choices=["item_page", "description"],
-                    help="注入入口：item_page=v1.1 商品主页面；description=v1.0 描述子页")
+    ap.add_argument("--entry", default="auto",
+                    choices=["auto", "item_page", "description", "features", "reviews"],
+                    help="auto 按位置 entry 选择入口；旧位置记录默认为 item_page")
     args = ap.parse_args()
 
     manifest = load_manifest(args.manifest)

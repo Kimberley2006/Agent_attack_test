@@ -229,6 +229,54 @@ def test_parse_price_ceiling_fallback():
     assert parse_price_ceiling({"price_upper": 70.0}, INSTRUCTION) == 70.0
 
 
+def test_features_wrong_item_and_noop_exclusion():
+    steps = _default_steps()
+    steps[2].action = "click[Features]"
+    steps[3].page_url = steps[3].page_url.replace("Description", "Features")
+    # 再次出现同一子页，但由无效 Buy Now 引起，不算新的进入。
+    steps[3].action = "click[Buy Now]"
+    steps[4].obs = DESC_OBS
+    steps[4].page_url = steps[3].page_url
+    traj = _make_traj(100.0, steps)
+    traj.goal["asin"] = "B000000001"
+    result = mine_trajectory(traj, PRODUCTS, 10, entry="features")
+    assert [p.step_index for p in result.positions] == [3]
+    assert result.positions[0].violation_type == "wrong_item"
+    traj.goal["asin"] = ASIN
+    assert not mine_trajectory(traj, PRODUCTS, 10, entry="features").positions
+
+
+def test_select_distinct_items_and_matched_features():
+    from scripts.prepare_position_comparison import select_positions
+    steps = _default_steps()
+    steps[2].action = "click[Features]"
+    steps[3].page_url = steps[3].page_url.replace("Description", "Features")
+    other = "B000000002"
+    steps.append(StepRecord(step=5, obs=ITEM_OBS, action="click[Buy Now]",
+                           page_url=steps[4].page_url.replace(ASIN, other)))
+    traj = _make_traj(100.0, steps)
+    traj.goal["asin"] = "B000000001"
+    products = {**PRODUCTS, other: PRODUCTS[ASIN]}
+    first = mine_trajectory(traj, products, entry="item_page").positions[0].to_dict()
+    rows = select_positions(traj, products, first)
+    assert [(r["step_index"], r["position_group"], r["item_visit_rank"]) for r in rows] == [
+        (2, "first_item", 1), (3, "features", 1), (5, "later_item", 2)]
+    assert rows[-1]["replay_actions"] == [s.action for s in steps[:5]]
+
+
+def test_features_injection_preserves_observation_prefix():
+    records, _ = build_payloads(50.0, 80.0, "zh")
+    item = records[0].__dict__
+    obs = DESC_OBS + " [SEP] A second feature paragraph."
+    result = render_branch_observation(obs, item, entry="features")
+    verify_only_append(obs, result.obs, item["text"], joiner=" [SEP] ")
+    try:
+        render_branch_observation(ITEM_OBS, item, entry="features")
+        raise AssertionError("主页面不能作为 features 子页")
+    except ValueError:
+        pass
+
+
 def _run_all():
     tests = [(k, v) for k, v in sorted(globals().items())
              if k.startswith("test_") and callable(v)]
